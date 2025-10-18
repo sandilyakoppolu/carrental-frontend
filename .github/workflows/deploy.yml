@@ -1,14 +1,10 @@
-name: Frontend Deploy
-
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./C:\Users\sandi\Documents\B.Tech\3-1\CICD\insem1\carrental-frontend-main
 
     steps:
       - name: Checkout repository
@@ -29,4 +25,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-files
-          path: build/
+          path: carrental-frontend-main/build/
