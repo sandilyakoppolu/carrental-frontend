@@ -4,7 +4,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./C:\Users\sandi\Documents\B.Tech\3-1\CICD\insem1\carrental-frontend-main
+        working-directory: ./carrental-frontend-main   
 
     steps:
       - name: Checkout repository
